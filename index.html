@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Online Form</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+        <header class="form-header">
+
+            <h1>Student Online Form</h1>
+
+            <p>
+                Complete the form below to register as a student.
+            </p>
+
+        </header>
+
+
+        <!-- ================= REGISTRATION FORM ================= -->
+
+        <form id="registrationForm">
+
+
+            <!-- ================= PERSONAL INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>1. Personal Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of Birth *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="5"
+                            max="100"
+                            placeholder="Enter your age"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Gender *</label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                                required
+                            >
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+                            Female
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Other"
+                            >
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="nationality">
+                        Nationality *
+                    </label>
+
+                    <select id="nationality"
+                            name="nationality"
+                            required>
+
+                        <option value="">
+                            -- Select nationality --
+                        </option>
+
+                        <option value="Ghanaian">
+                            Ghanaian
+                        </option>
+
+                        <option value="Nigerian">
+                            Nigerian
+                        </option>
+
+                        <option value="Kenyan">
+                            Kenyan
+                        </option>
+
+                        <option value="South African">
+                            South African
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>2. Contact Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="student@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="e.g. 0241234567"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Residential Address *
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="3"
+                        placeholder="Enter your residential address"
+                        required
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ACADEMIC INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>3. Academic Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="studentId">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            name="studentId"
+                            placeholder="If already assigned"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="academicYear">
+                            Academic Year *
+                        </label>
+
+                        <select
+                            id="academicYear"
+                            name="academicYear"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select year --
+                            </option>
+
+                            <option value="2026/2027">
+                                2026/2027
+                            </option>
+
+                            <option value="2027/2028">
+                                2027/2028
+                            </option>
+
+                            <option value="2028/2029">
+                                2028/2029
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department *
+                        </label>
+
+                        <select
+                            id="department"
+                            name="department"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select department --
+                            </option>
+
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Business Administration">
+                                Business Administration
+                            </option>
+
+                            <option value="Engineering">
+                                Engineering
+                            </option>
+
+                            <option value="Accounting">
+                                Accounting
+                            </option>
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="level">
+                            Level/Class *
+                        </label>
+
+                        <select
+                            id="level"
+                            name="level"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select level --
+                            </option>
+
+                            <option value="Level 100">
+                                Level 100
+                            </option>
+
+                            <option value="Level 200">
+                                Level 200
+                            </option>
+
+                            <option value="Level 300">
+                                Level 300
+                            </option>
+
+                            <option value="Level 400">
+                                Level 400
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="previousSchool">
+                        Previous School/Institution
+                    </label>
+
+                    <input
+                        type="text"
+                        id="previousSchool"
+                        name="previousSchool"
+                        placeholder="Enter previous school"
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= COURSE SELECTION ================= -->
+
+            <section class="form-section">
+
+                <h2>4. Course Selection</h2>
+
+                <p class="help-text">
+                    Select the courses you would like to register for.
+                </p>
+
+
+                <div class="checkbox-grid">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Web Development"
+                        >
+                        Web Development
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Database Systems"
+                        >
+                        Database Systems
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Business Management"
+                        >
+                        Business Management
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Mathematics"
+                        >
+                        Mathematics
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Computer Science"
+                        >
+                        Computer Science
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="courses"
+                            value="Accounting"
+                        >
+                        Accounting
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= GUARDIAN INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>5. Parent/Guardian Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Parent/Guardian Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guardianName"
+                            name="guardianName"
+                            placeholder="Full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="relationship">
+                            Relationship *
+                        </label>
+
+                        <select
+                            id="relationship"
+                            name="relationship"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select relationship --
+                            </option>
+
+                            <option value="Father">
+                                Father
+                            </option>
+
+                            <option value="Mother">
+                                Mother
+                            </option>
+
+                            <option value="Guardian">
+                                Guardian
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guardianPhone">
+                            Guardian Phone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="guardianPhone"
+                            name="guardianPhone"
+                            placeholder="Phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guardianEmail">
+                            Guardian Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="guardianEmail"
+                            name="guardianEmail"
+                            placeholder="Email address"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= DOCUMENT UPLOAD ================= -->
+
+            <section class="form-section">
+
+                <h2>6. Documents</h2>
+
+                <div class="form-group">
+
+                    <label for="photo">
+                        Passport Photograph *
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo"
+                        accept="image/*"
+                        required
+                    >
+
+                    <small>
+                        Accepted image files: JPG, JPEG, PNG.
+                    </small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="certificate">
+                        Academic Certificate/Result
+                    </label>
+
+                    <input
+                        type="file"
+                        id="certificate"
+                        name="certificate"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                    >
+
+                    <small>
+                        Accepted files: PDF, JPG, JPEG or PNG.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ADDITIONAL INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>7. Additional Information</h2>
+
+                <div class="form-group">
+
+                    <label for="interests">
+                        Interests/Skills
+                    </label>
+
+                    <textarea
+                        id="interests"
+                        name="interests"
+                        rows="4"
+                        maxlength="300"
+                        placeholder="Tell us about your interests or skills..."
+                    ></textarea>
+
+                    <div class="character-counter">
+                        <span id="characterCount">0</span>/300
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="emergency">
+                        Emergency Contact
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="emergency"
+                        name="emergency"
+                        placeholder="Emergency contact number"
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ACCOUNT INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <h2>8. Create Your Account</h2>
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password *
+                    </label>
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-button"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                    <small>
+                        Password must contain at least 8 characters,
+                        including a number.
+                    </small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password *
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= TERMS ================= -->
+
+            <section class="form-section">
+
+                <h2>9. Declaration and Consent</h2>
+
+                <div class="agreement">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            name="agreement"
+                            required
+                        >
+
+                        I confirm that the information provided
+                        in this form is accurate and complete.
+
+                    </label>
+
+                </div>
+
+
+                <div class="agreement">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="privacy"
+                            name="privacy"
+                            required
+                        >
+
+                        I agree to the school's terms and privacy policy.
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= BUTTONS ================= -->
+
+            <div class="form-buttons">
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Register Student
+                </button>
+
+
+                <button
+                    type="reset"
+                    class="reset-button"
+                >
+                    Clear Form
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+        <!-- ================= SUCCESS MESSAGE ================= -->
+
+        <div
+            id="successMessage"
+            class="success-message hidden"
+        >
+
+            <h2>Registration Successful!</h2>
+
+            <p>
+                Your student registration has been submitted successfully.
+            </p>
+
+            <p>
+                Registration Number:
+                <strong id="registrationNumber"></strong>
+            </p>
+
+            <button
+                id="printButton"
+                class="print-button"
+            >
+                Print Registration
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+  </body>
+</html>
